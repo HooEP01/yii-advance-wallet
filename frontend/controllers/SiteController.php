@@ -256,4 +256,13 @@ class SiteController extends Controller
             'model' => $model
         ]);
     }
+
+    public function actionSay($message = 'Hello')
+    {
+        return $this->render('note', ['message' => $message]);
+    }
+
+    
+
+
 }
